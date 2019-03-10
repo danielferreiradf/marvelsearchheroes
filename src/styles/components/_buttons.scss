@@ -25,4 +25,11 @@
       transform: translateY(-3px);
     }
   }
+
+  &-red-2 {
+    background: $primaryRed;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+  }
 }

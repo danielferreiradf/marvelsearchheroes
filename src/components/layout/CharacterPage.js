@@ -1,8 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CharacterPage = ({ character }) => {
-  // console.log(character);
-
   // Information
   const name = (character || {}).name;
   const description = (character || {}).description;
@@ -10,7 +9,6 @@ const CharacterPage = ({ character }) => {
   const thumbnailPath = ((character || {}).thumbnail || {}).path;
   const thumbnailExtension = ((character || {}).thumbnail || {}).extension;
   const thumbnail = `${thumbnailPath}/portrait_xlarge.${thumbnailExtension}`;
-  console.log(thumbnail);
   return (
     <div className="container">
       <div className="character">
@@ -22,7 +20,16 @@ const CharacterPage = ({ character }) => {
           />
           <div className="character__card-info">
             <h1 className="character__card-info-title">{name}</h1>
-            <p className="character__card-info-description">{description}</p>
+            {description ? (
+              <p className="character__card-info-description">{description}</p>
+            ) : (
+              <p className="character__card-info-description">
+                No Description Found.
+              </p>
+            )}
+            <Link to="/" className="btn btn-red-2">
+              <i class="fa fa-arrow-circle-left" /> Go Back
+            </Link>
           </div>
         </div>
       </div>
