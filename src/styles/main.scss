@@ -5,3 +5,12 @@
 @import "./base/reset";
 @import "./base/typography";
 @import "./base/media";
+
+@import "./components/buttons";
+
+@import "./layout/navbar";
+@import "./layout/search";
+@import "./layout/footer";
+@import "./layout/reactautosuggest";
+@import "./layout/character";
+@import "./layout/notfound";

@@ -6,8 +6,10 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="container">
+        <div className="navbar__menu" />
         <Link to="/">
-          <img src={Logo} alt="Marvel Logo" />
+          <img src={Logo} alt="Marvel Logo" className="navbar__menu-logo" />
+          <p>Search Heroes</p>
         </Link>
       </div>
     </nav>

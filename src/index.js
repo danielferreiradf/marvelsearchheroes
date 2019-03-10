@@ -4,5 +4,6 @@ import App from "./App";
 
 // SASS
 import "./styles/main.scss";
+import "../node_modules/font-awesome/css/font-awesome.min.css";
 
 ReactDOM.render(<App />, document.getElementById("root"));
