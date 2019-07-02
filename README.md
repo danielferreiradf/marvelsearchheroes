@@ -1,6 +1,6 @@
-# Marvel search Heroes
+# Marvel Search Heroes
 
-Search for a Marvel Character a get their Bio.
+Search for Marvel Characters a get their Bio.
 
 ## Built With
 
